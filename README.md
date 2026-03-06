@@ -19,7 +19,7 @@ The goal of this project is to explain the duration of cycling activities (Time)
 
 The analysis focuses on identifying which variables significantly influence the duration of a cycling activity and building a robust statistical model.
 
-###Dataset
+### Dataset
 
 The dataset contains information on cycling activities, including:
 
