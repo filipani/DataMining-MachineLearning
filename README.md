@@ -218,7 +218,7 @@ gbm
 
 dplyr
 
-### Datasets and Outputs
+## Datasets and Outputs
 
 Both datasets used in the analyses are included in this repository.
 
