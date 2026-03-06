@@ -1,4 +1,4 @@
-#Data Analysis Projects in R
+# Data Analysis Projects in R
 
 This repository contains two data analysis projects developed during my bachelor's degree coursework.
 
@@ -12,8 +12,8 @@ The repository includes:
 
 Both projects involve data preprocessing, model development, diagnostic analysis, and model evaluation.
 
-##Project 1 — Cycling Activity Analysis
-###Objective
+## Project 1 — Cycling Activity Analysis
+### Objective
 
 The goal of this project is to explain the duration of cycling activities (Time) using several physiological and activity-related predictors.
 
@@ -37,7 +37,7 @@ The dataset contains information on cycling activities, including:
 
 The response variable Time was converted from string format to numeric seconds for modeling.
 
-###Data Preparation
+### Data Preparation
 
 Several preprocessing steps were performed:
 
@@ -59,7 +59,7 @@ Exploratory analysis included:
 
 -multicollinearity diagnostics (VIF / tolerance)
 
-###Statistical Modeling
+### Statistical Modeling
 
 Multiple regression models were tested to explain cycling duration.
 
@@ -73,7 +73,7 @@ Diagnostic tests revealed several issues typical of real-world data:
 
 -presence of outliers
 
-###Model Improvements
+### Model Improvements
 
 To address these issues, several techniques were applied:
 
@@ -91,14 +91,14 @@ Model selection was performed using AIC-based stepwise selection.
 
 The final model explains cycling duration using a subset of predictors while improving the statistical assumptions of the model.
 
-##Project 2 — Diabetes Prediction
-###Objective
+## Project 2 — Diabetes Prediction
+### Objective
 
 The goal of this project is to build predictive models capable of identifying whether a patient is diagnosed with diabetes using demographic, lifestyle, and health indicators.
 
 The project emphasizes model comparison and evaluation.
 
-###Dataset
+### Dataset
 
 The dataset includes several predictors related to health and lifestyle, such as:
 
@@ -124,7 +124,7 @@ diagnosed_diabetes (Yes / No)
 
 Observations labeled Pre-Diabetes were removed to focus on clear diagnostic outcomes.
 
-###Data Preparation
+### Data Preparation
 
 Preprocessing steps included:
 
@@ -142,13 +142,13 @@ scoring dataset
 
 Outliers were detected using Cook's distance.
 
-###Feature Selection
+### Feature Selection
 
 Important predictors were identified using the Boruta algorithm, which is based on Random Forest feature importance.
 
 This step helped reduce dimensionality and improve model interpretability.
 
-###Machine Learning Models
+### Machine Learning Models
 
 Several machine learning models were trained and compared using 10-fold cross-validation and ROC AUC as the main evaluation metric.
 
@@ -174,7 +174,7 @@ Models tested include:
 
 The caret framework was used for training, preprocessing, hyperparameter tuning, and performance evaluation.
 
-###Model Evaluation
+### Model Evaluation
 
 Model performance was evaluated on a validation dataset using:
 
@@ -186,7 +186,7 @@ Model performance was evaluated on a validation dataset using:
 
 Predicted probabilities were also adjusted to reflect the true population prevalence of diabetes (~11%).
 
-###Decision Threshold Optimization
+### Decision Threshold Optimization
 
 Instead of using the default classification threshold (0.5), a custom threshold selection procedure was implemented to prioritize high recall (sensitivity).
 
@@ -194,7 +194,7 @@ This is particularly important in medical screening scenarios where false negati
 
 The optimal threshold was selected using validation data and can optionally be assessed with bootstrap resampling.
 
-###Tools and Libraries
+### Tools and Libraries
 
 The analysis was implemented in R using several libraries, including:
 
@@ -218,7 +218,7 @@ gbm
 
 dplyr
 
-###Datasets and Outputs
+### Datasets and Outputs
 
 Both datasets used in the analyses are included in this repository.
 
